@@ -8,10 +8,10 @@ mkdir -p $folder
 echo "** Download protobuf-3.9.2 sources"
 cd $folder
 if [ ! -f protobuf-python-3.9.2.zip ]; then
-  wget https://github.com/protocolbuffers/protobuf/releases/download/v3.9.2/protobuf-python-3.9.2.zip
+  proxychains wget https://github.com/protocolbuffers/protobuf/releases/download/v3.9.2/protobuf-python-3.9.2.zip
 fi
 if [ ! -f protoc-3.9.2-linux-aarch_64.zip ]; then
-  wget https://github.com/protocolbuffers/protobuf/releases/download/v3.9.2/protoc-3.9.2-linux-aarch_64.zip
+  proxychains wget https://github.com/protocolbuffers/protobuf/releases/download/v3.9.2/protoc-3.9.2-linux-aarch_64.zip
 fi
 
 echo "** Install protoc"
